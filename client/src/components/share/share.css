@@ -1,0 +1,117 @@
+.share {
+    width: 78%;
+    
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 0px 13px 1px rgba(173,159,173,1);
+-moz-box-shadow: 0px 0px 13px 1px rgba(173,159,173,1);
+box-shadow: 0px 0px 13px 1px rgba(173,159,173,1);
+}
+.shareWrapper{
+    padding: 10px;
+}
+.sharetop{
+    display: flex;
+    align-items: center;
+}
+.shareProfileImg{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+    background-color: rgb(96, 153, 144);
+}
+.shareInput{
+    border: none;
+    width: 60%;
+}
+.shareInput2{
+    margin-left: 30px;
+    padding: 10px;
+    width: 20%;
+}
+.shareInput:focus{
+    outline: none;
+}
+.shareHr{
+    margin: 20px;
+}
+.shareButton{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.shareOptions{
+    display: flex;
+}
+.shareOption{
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+    cursor: pointer;
+    padding-left: 10px;
+}
+.shareIcon{
+    margin-left: 5px;
+        font-size: 15px;
+}
+.shareOptionText{
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    padding-left: 5px;
+}
+ /* input[type=file] {
+    display:none;
+    margin:10px;
+    }
+ input[type=file] + label {
+    display:inline-block;
+    background-color: #FFFFFF;
+    }
+input[type=file]:active + label {
+    background-image: none;
+    background-color:#2D6C7A;
+    color:#FFFFFF;
+    } */
+
+.shareButton button{ 
+    position:absolute;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: rgb(16, 173, 16);
+    font-weight: 500;
+    /* margin-right: 0px; */
+    cursor: pointer;
+    color: white;
+}
+
+/* profile page */
+.prshare{
+    width: 70%;
+    height: 150px;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 0px 13px 1px rgba(173,159,173,1);
+-moz-box-shadow: 0px 0px 13px 1px rgba(173,159,173,1);
+box-shadow: 0px 0px 13px 1px rgba(173,159,173,1);
+}
+.prshareWrapper{
+    padding: 10px;
+}
+.shareImgContainer{
+    padding: 0px 20px 10px 20px;
+    position: relative;
+}
+.shareImg{
+    width: 100%;
+    object-fit: cover;
+}
+.shareCancel{
+    position: absolute;
+    top: 0;
+    right: 20px;
+    background-color: aliceblue;
+    cursor: pointer;
+    opacity: 0.7;
+}

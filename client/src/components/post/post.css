@@ -1,0 +1,174 @@
+.post {
+    width: 70%;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 0px 13px 1px rgba(173, 159, 173, 1);
+    -moz-box-shadow: 0px 0px 13px 1px rgba(173, 159, 173, 1);
+    box-shadow: 0px 0px 13px 1px rgba(173, 159, 173, 1);
+    margin-top: 30px;
+
+}
+
+.postWrapper {
+    padding: 10px;
+}
+
+.postTop {
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between;  */
+}
+
+.postTopLeft {
+    display: flex;
+    align-items: center;
+}
+
+.postProfileImg {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    object-fit: cover;
+    background-color: rgb(96, 153, 144);
+}
+
+.postUsername {
+    font-size: 19px;
+    font-weight: 500;
+    margin: 0 10px;
+}
+
+.postDate {
+    font-size: 12px;
+}
+
+.postCenter {
+    margin: 20px 0;
+}
+
+.postImg {
+    margin-top: 20px;
+    width: 100%;
+    max-height: 500px;
+    object-fit: contain;
+}
+
+.postBottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 0;
+}
+
+.postBottomLeft {
+    display: flex;
+    align-items: center;
+}
+
+.likeIcon {
+    width: 32px;
+    height: 32px;
+    margin-right: 3px;
+    cursor: pointer;
+
+}
+
+.heartIcon {
+    width: 40px;
+    height: 25px;
+    margin-right: 3px;
+    cursor: pointer;
+    margin-top: 2px;
+}
+
+.postLikeCounter {
+    font-size: 15px;
+    margin-left: 10px;
+}
+
+.postBottomRight {
+    font-size: 20px;
+}
+
+.postCommentText {
+    cursor: pointer;
+    font-size: 18px;
+    border-bottom: 1px dashed grey;
+}
+
+.postTopRight {
+    margin-left: 250px;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    border: 2px solid rgba(196, 61, 37, 0.897);
+    border-radius: 7px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    /* background-color: rgba(255, 233, 187, 0.774); */
+}
+.buy{
+    margin-left: 10px;
+    border: 1px solid rgb(172, 164, 141);
+    border-radius: 7px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    background-color: rgb(243, 243, 17);
+    font-size: 15x;
+    cursor: pointer;
+}
+
+.price {
+    align-items: center;
+}
+/* wishlist */
+
+.postwish {
+   width: 47%;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 0px 13px 1px rgba(173, 159, 173, 1);
+    -moz-box-shadow: 0px 0px 13px 1px rgba(173, 159, 173, 1);
+    box-shadow: 0px 0px 13px 1px rgba(173, 159, 173, 1);
+    margin-top: 30px;
+
+}
+.postWrapperwish {
+    padding: 10px;
+}
+.postTopRightwish {
+    margin-left: 110px;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    border: 2px solid rgba(196, 61, 37, 0.897);
+    border-radius: 7px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    /* background-color: rgba(255, 233, 187, 0.774); */
+}
+.postCenterwish {
+    margin: 10px 0;
+}
+.postImg {
+    margin-top: 20px;
+    width: 100%;
+    max-height: 500px;
+    object-fit: contain;
+}
+.postImgwish {
+    margin-top: 20px;
+    width: 100%;
+    max-height: 330px;
+    object-fit: contain;
+}
+.postBottomwish {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0px;
+}

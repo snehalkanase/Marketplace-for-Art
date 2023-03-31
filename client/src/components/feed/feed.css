@@ -1,0 +1,14 @@
+.feed{
+    flex: 6;
+}
+.feedWrapper{
+    padding: 20px;
+    padding-left: 100px;
+}
+.prfeed{
+    flex: 7;
+}
+.prfeedWrapper{
+    padding: 20px;
+    padding-left: 50px;
+}

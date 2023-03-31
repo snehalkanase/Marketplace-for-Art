@@ -1,0 +1,109 @@
+.paymentContainer{
+ display: grid;
+ place-items: center;
+ height: 65vh;
+ margin: 2vmax;
+}
+.paymentForm{
+    width: 22%;
+    height: 90%;
+    border: 1px solid rgba(49, 48, 48, 0.568);
+    padding: 35px;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 0px 13px 1px rgba(173, 159, 173, 1);
+    -moz-box-shadow: 0px 0px 13px 1px rgba(173, 159, 173, 1);
+    box-shadow: 0px 0px 13px 1px rgba(173, 159, 173, 1);
+}
+.paymentForm > p{
+    font: 400 2vmax;
+    color: black;
+    border-bottom: 1px solid rgb(114, 114, 114);
+    margin-bottom: 1px;
+    padding: 1vmax 5vmax;
+    text-align: center;
+    width: 50%;
+    margin: auto;
+    font-size: 25px;
+    height: 10%;
+    background-color: rgba(212, 212, 212, 0.74);
+}
+.paymentForm >label {
+    color: rgb(70, 69, 69);
+    font-size: 20px;
+}
+.paymentForm >h6 {
+    color: rgb(90, 86, 86);
+    padding-top: 10px;
+    font-size: 18px;
+
+}
+.paymentForm > div{
+    display: flex;
+    align-items: center;
+    margin: 1vmax 0;
+    padding-top: 10px;
+}
+.paymentForm > div > svg{
+    color: rgb(80, 76, 76);
+    padding-right: 8px;
+}
+.cardInput{
+    padding: 1vmax 1vmax;
+    padding-right: 1vmax;
+    width: 100%;
+    box-sizing: border-box;
+    border: 0.3px solid rgb(151, 150, 150);
+    border-radius: 4px;
+    outline: none;
+}
+.cardInput:hover{
+    border: 1.6px  ;
+    -webkit-box-shadow: 0px 0px 5px 1px rgb(48, 48, 48);
+    -moz-box-shadow: 0px 0px 5px 1px rgb(212, 212, 212);
+    box-shadow: 0px 0px 5px 1px rgb(202, 202, 202);
+}
+.payInput{
+    padding: 0.8vmax 0.6vmax;
+    padding-right: 2vmax;
+    width: 20%;
+    border: 1px solid gray;
+    border-radius: 4px;
+    outline: none;
+}
+.pa{
+    display: flex;
+}
+.img{
+    width: 50%;
+    height: 40px;
+   padding-left: 10px;
+}
+.payInput:hover{
+    border: 1.6px  ;
+    -webkit-box-shadow: 0px 0px 5px 1px rgb(48, 48, 48);
+    -moz-box-shadow: 0px 0px 5px 1px rgb(212, 212, 212);
+    box-shadow: 0px 0px 5px 1px rgb(202, 202, 202);
+}
+.pay{
+    justify-content: space-between;
+}
+.pay> div{
+    display: flex;
+}
+.pay > div > svg{
+    color: rgb(80, 76, 76);
+    padding-right: 8px;
+}
+.paybtn{
+    border: none;
+    background-color: rgba(59, 88, 175, 0.863);
+    color: white;
+    width: 100%;
+    padding: 1vmax;
+    font: 300 0.8vmax;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all 0.5s;
+    outline: none;
+    margin-top: 10px;
+}

@@ -1,0 +1,29 @@
+.myOrders{
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: rgb(255, 255, 255);
+    left: 0;
+   
+
+} 
+.myOrdersPage{
+ flex : 5.6 ;
+ padding: 10px;
+ margin-right: 22px;
+ margin-left: 29px;
+ margin-top: 30px;
+ 
+}
+#myOrderHeading{
+    text-align: center;
+    font: 400 1.2vmax;
+    padding: 0.5vmax;
+    box-sizing: border-box;
+    color: antiquewhite;
+    transition: all 0.5s;
+    background-color: teal;
+}
+.MuiDataGrid-columnHeader{
+    background-color:rgb(212, 185, 127);
+}

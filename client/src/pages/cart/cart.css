@@ -1,0 +1,90 @@
+.cartPage{
+    padding-top: 5vmax;
+}
+.cartHeader{
+    width: 80%;
+    background-color:rgb(206, 164, 111);
+    box-sizing: border-box;
+    margin: auto;
+    color: white;
+    display: grid;
+    grid-template-columns: 4fr 1fr 1fr;
+    font: 300 0.7vmax
+}
+.cartHeader > p {
+margin: 10px;
+
+}
+.cartHeader > p:last-child{
+    text-align: end;
+}
+.cartContainer{
+    width: 77% ;
+    margin: auto;
+    display: grid;
+    grid-template-columns:4fr 1fr 1fr ;
+}
+.cartSubtotal{
+    display: flex;
+    padding: 0.5vmax;
+    box-sizing: border-box;
+    font: 300 1vmax cursive;
+    margin-top: 80px;
+    height: 3vmax;
+    margin-left: 5vmax;
+    padding-right: 30px;
+    align-items: center;
+    justify-content: flex-end;
+    color: black;
+    font-size: 20px;
+    border: 2px solid rgba(196, 61, 37, 0.897);
+    border-radius: 7px;
+}
+.cartGrossProfit{
+    display: grid;
+    grid-template-columns: 1.7fr 1.2fr;
+    width: 85%;
+}
+.cartGrossProfitBox{
+    border-top: 2px solid gray;
+    margin: 1vmax 5vmax;
+    box-sizing: border-box;
+    padding: 2vmax 0;
+    font: 300 1vmax ;
+    display: flex;
+    font-size: 19px;
+    margin-right: 10vmax;
+    justify-content: space-between;
+}
+.checkOut{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 10vmax;
+}
+.checkOut > button{
+    background-color: rgb(184, 138, 11);
+    color: white;
+    border: none;
+    padding: 0.8vmax 2.5vmax;
+    font: 300 1vmax ;
+    cursor: pointer;
+    border-radius: 30px;
+}
+/* .toast-message {
+    background:rgb(57, 58, 58);
+    color: #fff;
+    height: 20px;
+    width: auto;
+    text-orientation: horizontal;
+    letter-spacing: 1px;
+    writing-mode: horizontal-tb;
+    font-size: 5px;
+} */
+.pricetag{
+    border: 2px solid rgba(196, 61, 37, 0.897);
+    border-radius: 7px;
+    padding-right: 25px;
+    padding-left: 25px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}

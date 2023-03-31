@@ -1,0 +1,119 @@
+.confirmOrderPage{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 6fr 3fr;
+}
+.confirmOrderPage > div:last-child{
+    border-left: 1px solid rgb(85, 84, 84);
+}
+.confirmshippingArea{
+    padding: 3vmax;
+    padding-left: 9vmax;
+    padding-bottom: 0px;
+    
+}
+.confirmshippingArea > p{
+    font: 400 1.8vmax;
+}
+.confirmshippingAreaBox,
+.confirmCartItemContainer{
+    margin: 2vmax;
+}
+.confirmshippingAreaBox > div{
+    display: flex;
+    margin: 1vmax 0;
+    font-size: 19px;
+}
+.confirmshippingAreaBox > div{
+    font: 400 1vmax;
+    color: black;
+}
+.confirmshippingAreaBox > div > span{
+    color: rgb(165, 119, 58);
+    margin: 0 1vmax;
+    font: 100;
+}
+.confirmCartItems > p{
+    font: 400 1.8vmax;
+}
+.confirmCartItems{
+    padding: 5vmax;
+    padding-top: 1vmax;
+    padding-left: 9vmax;
+}
+.confirmCartItemContainer{
+    max-height: 19vmax;
+    overflow-y: auto;
+}
+.confirmCartItemContainer > div {
+    display: flex;
+    justify-content: space-between;
+    margin: 2vmax 0;
+    font: 300 1vmax;
+    align-items: center;
+}
+.confirmCartItemContainer >div > span{
+    margin-right: 120px;
+    font-size: 25px;
+    border: 2px solid rgba(196, 61, 37, 0.897);
+    border-radius: 7px;
+    padding-right: 25px;
+    padding-left: 25px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.poster{
+    height: 30%;
+    width: 26%;
+}
+
+.orderSummary{
+  padding: 5vmax;
+}
+
+
+.orderSummary > p{
+    text-align: center;
+    font: 400 1.8vmax;
+    border-bottom: 1px solid gray;
+    padding: 1vmax;
+    width: 100%;
+    margin: auto;
+    box-sizing: border-box;
+}
+.orderSummary > div > div {
+    display: flex;
+    font: 300 1vmax;
+    justify-content: space-between;
+    margin: 2vmax 0;
+    font-size: 19px;
+}
+.orderSummary > div > div >span{
+    color: rgb(122, 24, 24);
+}
+.orderSummaryTotal{
+    display: flex;
+    font: 300 1vmax;
+    justify-content: space-between;
+    border-top: 1px solid gray;
+    padding: 2vmax 0;
+    font-size: 19px;
+}
+.orderSummaryTotal > span{
+    color: rgb(122, 24, 24);
+}
+.orderSummary >button{
+    background-color: rgb(184, 138, 11);
+    border-radius: 20px;
+    color: rgb(252, 250, 247);
+    width: 100%;
+    padding: 1vmax;
+    border: none;
+    margin: auto;
+    cursor: pointer;
+    transition: 0.5s;
+    font: 400 1vmax;
+}
+.orderSummary >button:hover{
+    background-color: rgba(182, 179, 23, 0.863) ;
+}

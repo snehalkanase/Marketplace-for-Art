@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+}
+.wishlist{
+    display: flex;
+    width: 100%;
+} 
+.wishWrapper{
+ flex : 6
+}
+.wishlistContainer{
+    padding: 20px;
+    padding-left: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;  
+}
+.wishWrapper > h4{
+   font-size: 30px;
+   text-align: center;
+   padding-top: 20px;
+   font-style: italic;
+   }
