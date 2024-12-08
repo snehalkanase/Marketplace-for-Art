@@ -106,11 +106,13 @@ export default function Post({ post, wishlist }) {
                 <span class="postUsername">{user.username}</span>
                 <span class="postDate">{post.updatedAt}</span>
               </div>
+              <div className='postCard'>
               <div class="postTopRight">
                 <CurrencyRupee />
                 <span className="price">{post.price}</span>
               </div>
               <button onClick={() => buyHandler()} className='buy'>Buy</button>
+              </div>
             </div>
             <div class="postCenter">
               <span class="postText">{post?.desc}</span>
