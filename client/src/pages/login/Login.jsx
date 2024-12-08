@@ -19,9 +19,6 @@ export default function Login() {
             { email: email.current.value, password: password.current.value },
             dispatch
         );
-
-        // window.localStorage.setItem("user", JSON.stringify({ 
-        //     email: email.current.value, password: password.current.value }));
     };
     console.log(user);
     if (user) {

@@ -1,11 +1,25 @@
-import axios from 'axios'
+import axios from "axios";
+import {
+  LoginStart,
+  LoginSuccess,
+  LoginFailure,
+} from "../src/context/AuthActions";
 
-export const loginCall = async(userCredentials, dispatch) => {
-    dispatch({ type: "LOGIN_START" });
-    try{
-        const res = await axios.post("/auth/login", userCredentials);
-        dispatch({ type: "LOGIN_SUCCESS", payload: res.data });
-    } catch(err) {
-        dispatch({ type: "LOGIN_FAILURE", payload: err });
+export const loginCall = async (userCredentials, dispatch) => {
+  dispatch(LoginStart());
+  try {
+    const res = await axios.post("/auth/login", userCredentials);
+    if (res.status === 200) {
+      dispatch(LoginSuccess(res.data.user));
     }
+  } catch (err) {
+    const errorPayload = err.response
+      ? {
+          message: err.response.data?.message || "Login failed",
+          status: err.response.status,
+        }
+      : { message: err.message || "Network error" };
+
+    dispatch(LoginFailure(errorPayload)); // Dispatch failure with detailed error
+  }
 };
