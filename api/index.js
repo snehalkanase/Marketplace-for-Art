@@ -35,7 +35,7 @@ const database = (module.exports = () => {
   };
   try {
     mongoose.connect(
-      "mongodb+srv://snehalkanase:snehal9090@cluster0.wa3tamf.mongodb.net/social?retryWrites=true&w=majority",
+      process.env.MONGO_URI,
       connectionParams
     );
     console.log("Connect to MongoDB");
