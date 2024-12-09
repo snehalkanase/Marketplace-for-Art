@@ -10,6 +10,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { addItemsToCart } from '../../actions/cartAction';
 import { useSelector, useDispatch} from 'react-redux';
+import api from '../../utils/api';
 
 
 
@@ -31,7 +32,7 @@ export default function Post({ post, wishlist }) {
 
   useEffect(() => {
     const fetchUsers = async () => {
-      const res = await axios.get(`/users?userId=${post.userId}`);
+      const res = await axios.get(`${api}/users?userId=${post.userId}`);
       setUser(res.data);
     };
     fetchUsers();
@@ -46,7 +47,7 @@ export default function Post({ post, wishlist }) {
   // like
   const likeHandler = () => {
     try {
-      axios.put("/post/" + post._id + "/like", { userId: currentUser._id })
+      axios.put(`${api}/post/${post._id}/like`, { userId: currentUser._id })
  
     } catch (err) {
       console.log(err)
@@ -64,7 +65,7 @@ export default function Post({ post, wishlist }) {
     }
     console.log(post)
     try {
-      axios.put("/post/"+currentUser._id+"/wishlist", wishlists);
+      axios.put(`${api}/post/${currentUser._id}/wishlist`, wishlists);
        window.location.reload();
     //    toast.success('Added to Wishlist !', {
     //     position: toast.POSITION.TOP_CENTER,

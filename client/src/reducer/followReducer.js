@@ -3,7 +3,7 @@ import { FOLLOW, FOLLOWING, UNFOLLOW } from "../constantes/followConstantes";
 export const followReducer = (state ={followers:[], followings:[]}, action) => {
     switch (action.type){
         case FOLLOW:
-            const follow = action.payload;
+            let follow = action.payload;
 
                 return{
                     ...state,

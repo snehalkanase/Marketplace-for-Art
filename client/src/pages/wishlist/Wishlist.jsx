@@ -7,6 +7,7 @@ import axios from 'axios';
 import { useParams } from 'react-router-dom';
 import Post from '../../components/post/Post';
 import { useWishlistContext } from '../../context/WishlistContext';
+import api from '../../utils/api';
 
 
 export default function Wishlist() {
@@ -30,7 +31,7 @@ export default function Wishlist() {
     const fetchPosts = async () => {
       try{
         console.log("success");
-        const res = await axios.get("/post/"+user._id+"/wishlist");
+        const res = await axios.get(`${api}/post/${user._id}/wishlist`);
         console.log("wishlist")
          setWishlist(res.data);
       } catch(err){

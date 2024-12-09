@@ -1,10 +1,10 @@
 import { Cancel, EmojiEmotions, LocalOfferOutlined, LocationOnOutlined, PermMediaOutlined } from '@mui/icons-material';
-import React, { useContext, useEffect, useRef, useState } from 'react';
+import React, { useContext, useRef, useState } from 'react';
 import "./share.css";
 import { AuthContext } from '../../context/AuthContext';
 // import { PostContext } from '../../context/PostContext';
 import axios from 'axios';
-import { Navigate } from 'react-router-dom';
+import api from '../../utils/api';
 
 
 export default function Share({ profile }) {
@@ -52,7 +52,7 @@ export default function Share({ profile }) {
             
         }
         try {
-            await axios.post("/post", newPost);
+            await axios.post(`${api}/post`, newPost);
             window.location.reload();
         } catch (err) {
             console.log(err);

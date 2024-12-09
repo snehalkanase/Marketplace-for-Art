@@ -3,6 +3,7 @@ import { useRef } from 'react';
 
 import { useNavigate } from 'react-router-dom';
 import "./register.css";
+import api from '../../utils/api';
 
 export default function Register() {
 
@@ -20,7 +21,7 @@ export default function Register() {
             password : password.current.value
      }
      try{
-        await axios.post("/auth/register", user);
+        await axios.post(`${api}/auth/register`, user);
         // return < Navigate to="/login" />;
          history('/login');
 

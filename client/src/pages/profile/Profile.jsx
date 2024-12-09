@@ -11,6 +11,7 @@ import { Add, Remove } from '@mui/icons-material';
 import { follow, unfollow } from '../../actions/followAction';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import api from '../../utils/api';
 
 
 export default function Profile() {
@@ -40,7 +41,7 @@ export default function Profile() {
 
   useEffect(() => {
     const fetchUsers = async () => {
-      const res = await axios.get(`/users?username=${username}`);
+      const res = await axios.get(`${api}/users?username=${username}`);
       setUser(res.data);
     };
     fetchUsers();
@@ -55,7 +56,7 @@ export default function Profile() {
     }
     try{
       if(followed){
-        await axios.put("/users/"+ user._id +"/unfollow",{userId: user._id});
+        await axios.put(`${api}/users/${user._id}/unfollow`,{userId: user._id});
         dispatch({type: "FOLLOW", payload: currentUser._id});
 
       //   toast.success('user has been unfollowed !', {
@@ -65,7 +66,7 @@ export default function Profile() {
         // dispatch(unfollow(userId));
         
      }else{
-     const res = await axios.put("/users/"+currentUser._id+"/follow", {userId:user._id});
+     const res = await axios.put(`${api}/users/${currentUser._id}/follow`, {userId:user._id});
       dispatch({type: "FOLLOW", payload: currentUser._id});
       // dispatch(follow(userId));
       console.log(res.data)

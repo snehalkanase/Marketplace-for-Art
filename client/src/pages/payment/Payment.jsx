@@ -16,6 +16,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { useNavigate } from 'react-router-dom';
 import { clearErrors, createOrder } from '../../actions/orderAction';
+import api from '../../utils/api';
 
 export default function Payment() {
 
@@ -92,7 +93,7 @@ export default function Payment() {
                         status: result.paymentIntent.status,
                     };
             
-                    await axios.post("/order/"+user._id+"/newOrder", order, config);
+                    await axios.post(`${api}/order/${user._id}/newOrder`, order, config);
                     dispatch(createOrder(order));
                     history("/success");
                 }else{
